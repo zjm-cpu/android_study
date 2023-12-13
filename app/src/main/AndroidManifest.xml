@@ -21,8 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".MyService" />
+        <provider android:name="StudentsProvider"
+            android:authorities="com.example.provider.College" >
+        </provider>
+<!--        <service android:name=".MyService" />-->
     </application>
 
 </manifest>
